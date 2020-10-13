@@ -46,3 +46,44 @@
   - `[abc]` means a or b or c
   - `[!abc]` means any charactor that is not a, b or c
   - `[[:alpha:]]` means only (one) letter; `[[:digit:]]` means only (one) number; `[[:lower:]]` means only (one) lowercase letter; `[[:upper:]]` means only (one) uppercase letter;
+  
+- variables
+
+  how to set / unset variables in shell?
+  
+  ```bash
+  # mind that there is no spaces!
+  name=evan
+  
+  # unset
+  unset name
+  ```
+  
+  how to get value of variables?
+  
+  ```bash
+  ${name}
+  ```
+  how to get variables length?
+  
+  ```bash
+  ${#name}
+  ```
+  
+  how to get part of variables?
+  
+  ```bash
+  # from the second one to the end
+  ${name:2} 
+  
+  # from the second one, and the length is 1
+  ${name:2:1}
+  
+  # froom the last third one to the end
+  # mind the space
+  ${name: -3}
+  
+  # froom the last third one, and the length is 2
+  # mind the space
+  ${name: -3:2}
+  ```
