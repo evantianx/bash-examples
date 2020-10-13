@@ -28,3 +28,13 @@
 
   `more x` to show content of x and start from beginning;
   `less x` to show content of x in an screen and quit without anything leave
+
+- `touch`
+
+  can modify the last edited time of one exist file
+  
+  - `touch -c blabla` just touch one file only it exists
+  
+- `mkdir`
+
+  - `mkdir -p new_parent_folder/new_child_folder` create both `new_parent_folder` and `new_child_folder`
