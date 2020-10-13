@@ -38,3 +38,11 @@
 - `mkdir`
 
   - `mkdir -p new_parent_folder/new_child_folder` create both `new_parent_folder` and `new_child_folder`
+  
+- wild card
+
+  - `*` means any charactors
+  - `?` means any single charactor
+  - `[abc]` means a or b or c
+  - `[!abc]` means any charactor that is not a, b or c
+  - `[[:alpha:]]` means only (one) letter; `[[:digit:]]` means only (one) number; `[[:lower:]]` means only (one) lowercase letter; `[[:upper:]]` means only (one) uppercase letter;
