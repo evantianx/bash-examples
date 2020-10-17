@@ -79,11 +79,30 @@
   # from the second one, and the length is 1
   ${name:2:1}
   
-  # froom the last third one to the end
+  # from the last third one to the end
   # mind the space
   ${name: -3}
   
-  # froom the last third one, and the length is 2
+  # from the last third one, and the length is 2
   # mind the space
   ${name: -3:2}
+  ```
+  
+  how to get rid of specific charactor from a variables?
+  
+  - start operator `#` and end operator `%`
+  ```bash
+  # get rid of 'e' from 'evan'
+  # if this charactor doesn't exist, then do nothing
+  ${name#e}
+  
+  # you can also get rid of multiples charactors like 'ev'
+  ${name#ev}
+  
+  # remove everything before some charactors(included)
+  ${name#*v} 
+  
+  # remove everything after some charactors(included)
+  ${name%v*}
+  
   ```
