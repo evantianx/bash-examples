@@ -91,6 +91,8 @@
   how to get rid of specific charactor from a variables?
   
   - start operator `#` and end operator `%`
+  
+  only matched charactors will be removed
   ```bash
   # get rid of 'e' from 'evan'
   # if this charactor doesn't exist, then do nothing
